@@ -1,0 +1,21 @@
+/* logo + titre + horaire */
+        /* fusion logo + titre */
+        .header__logo {
+            display: flex;
+            flex-direction: row;
+            white-space: nowrap;
+            margin-top: 5px;
+    }
+                    /* logo_vivi_mini */
+    .header__logo__picture {
+            height: 68px;
+            width: 80px;
+            top: 5px;
+    }
+                    /* titre */
+    .header__logo__title {
+            white-space: nowrap;
+            top: 0;
+            left: 40%;
+            margin-left: 2px;   
+    }

@@ -1,0 +1,39 @@
+$mobile-one: 980px!default;
+$mobile-two: 981px!default;
+$desktop-one: 1024px!default;
+$desktop-two: 1025px!default;
+$large-one: 1600px!default;
+$large-two: 1601px!default;
+
+// $mobile-up: "only screen and (min-width: #{$mobile-two})";
+// $mobile-down: "only screen and (max-width: #{$mobile-one})";
+
+$desktop-up: "only screen and (min-width: #{$desktop-two})";
+$desktop-down: "only screen and (max-width: #{$desktop-one})";
+
+$large-up: "only screen and (min-width: #{$large-two})";
+$large-down: "only screen and (max-width: #{$large-one})";
+
+@media #{$large-up} {
+    .nous-trouver__localisation {
+        margin-top: 400px;
+    }
+}
+@media #{$large-down} {
+    header {
+            flex-wrap: wrap;
+    }
+}
+@media #{$desktop-down} {
+    .nous-trouver__localisation__banniere,.nous-trouver__localisation__picture {
+        width: 60%;
+    }
+    .menu__main__contenu__picture {
+        flex-direction: column;
+    }
+    .menu__main__contenu__picture__magnet {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

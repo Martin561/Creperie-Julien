@@ -1,0 +1,29 @@
+/* style header */
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: $primary;
+    height: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 0;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+    /* menu header */
+.header a {
+    padding: 20px;
+}
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
