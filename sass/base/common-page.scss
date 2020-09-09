@@ -19,6 +19,6 @@ body {
 }
 /* padding main des pages : accueil, section_news, carte OK */
 .index__main, .news__section, .menu__main, .galette__main, .crepe__main, .nous-trouver__localisation {
-    margin-top: 130px;
-    padding: 20px;
+    margin:auto;
+    padding: 0;
 }
