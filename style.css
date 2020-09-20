@@ -68,8 +68,64 @@ body {
 
 /* padding main des pages : accueil, section_news, carte OK */
 .index__main, .news__section, .menu__main, .galette__main, .crepe__main, .nous-trouver__localisation {
-  margin: auto;
-  padding: 0;
+  margin-top: 130px;
+  padding: 20px;
+}
+
+/* logo + titre + horaire */
+/* fusion logo + titre */
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+
+/* logo_vivi_mini */
+.header__logo__picture {
+  height: 68px;
+  width: 80px;
+  top: 5px;
+}
+
+/* titre */
+.header__logo__title {
+  white-space: nowrap;
+  top: 0;
+  left: 40%;
+  margin-left: 2px;
+}
+
+/* style header */
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #f2d891;
+  height: 150px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 0;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* menu header */
+.header a {
+  padding: 20px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .index__main, .news__section, .menu__main, .nous-trouver__localisation, .nous-contacter__main, .formule, .crepe__main, .galette__main {
@@ -89,39 +145,32 @@ body {
   padding-bottom: 3px;
 }
 
-/* style header */
-header {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  background-color: #f2d891;
-  height: 200px;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 0;
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0;
-}
-
-/* menu header */
-.header a {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 0;
-}
-
-.header__nav {
-  display: flex;
-  flex-direction: row;
+/* Boutons menu */
+.header__nav__button, .header__nav__active {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: "caveatregular", "Comic Sans MS", Verdana, Arial, sans-serif;
+  padding: 10px;
+  width: 200px;
   white-space: nowrap;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
+}
+
+/* ecriture en noir par default des bouttons de navigation non-actifs */
+.header__nav__button {
+  color: black;
+  border-radius: 3px;
+}
+
+/* survol bouton du menu navigation non-actifs en marron */
+.header__nav__button:hover {
+  background-color: #c49615;
+}
+
+/* ecriture en couleur ivoire des boutons des pages actives */
+.header__nav__active {
+  color: grey;
 }
 
 /* footer */
@@ -170,138 +219,6 @@ footer {
 
 .footer__filigram__signature:hover {
   color: green;
-}
-
-@media only screen and (min-width: 1601px) {
-  .nous-trouver__localisation {
-    margin-top: 400px;
-  }
-}
-@media only screen and (max-width: 1600px) {
-  header {
-    flex-wrap: wrap;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .nous-trouver__localisation__banniere, .nous-trouver__localisation__picture {
-    width: 60%;
-  }
-
-  .menu__main__contenu__picture {
-    flex-direction: column;
-  }
-
-  .menu__main__contenu__picture__magnet {
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-/* responsive navigation bar */
-/* responsive background */
-/* background index */
-@media only screen and (max-width: 980px) {
-  .index {
-    background-image: url("pictures/campagne800px.jpg");
-  }
-
-  .news {
-    background-image: url("pictures/background_wheat_field800px.jpg");
-  }
-
-  .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
-    background-image: url("pictures/restaurant800px.jpg");
-  }
-}
-@media only screen and (min-width: 981px) and (max-width: 1024px) {
-  .index {
-    background-image: url("pictures/campagne1024px.jpg");
-  }
-
-  .news {
-    background-image: url("pictures/background_wheat_field1024px.jpg");
-  }
-
-  .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
-    background-image: url("pictures/restaurant1024px.jpg");
-  }
-}
-@media only screen and (min-width: 1025px) and (max-width: 1600px) {
-  .index {
-    background-image: url("pictures/campagne1600px.jpg");
-  }
-
-  .news {
-    background-image: url("pictures/background_wheat_field1600px.jpg");
-  }
-
-  .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
-    background-image: url("pictures/restaurant1600px.jpg");
-  }
-}
-@media only screen and (min-width: 1601px) {
-  .index {
-    background-image: url("pictures/campagne3200px.jpg");
-  }
-
-  .news {
-    background-image: url("pictures/background_wheat_field3200px.jpg");
-  }
-
-  .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
-    background-image: url("pictures/restaurant1900px.jpg");
-  }
-}
-/* logo + titre + horaire */
-/* fusion logo + titre */
-.header__logo {
-  display: flex;
-  flex-direction: row;
-  white-space: nowrap;
-  margin-top: 5px;
-}
-
-/* logo_vivi_mini */
-.header__logo__picture {
-  height: 68px;
-  width: 80px;
-  top: 5px;
-}
-
-/* titre */
-.header__logo__title {
-  white-space: nowrap;
-  top: 0;
-  left: 40%;
-  margin-left: 2px;
-}
-
-/* Boutons menu */
-.header__nav__button, .header__nav__active {
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1.2em;
-  font-family: "caveatregular", "Comic Sans MS", Verdana, Arial, sans-serif;
-  padding: 10px;
-  width: 200px;
-  white-space: nowrap;
-}
-
-/* ecriture en noir par default des bouttons de navigation non-actifs */
-.header__nav__button {
-  color: black;
-  border-radius: 3px;
-}
-
-/* survol bouton du menu navigation non-actifs en marron */
-.header__nav__button:hover {
-  background-color: #c49615;
-}
-
-/* ecriture en couleur ivoire des boutons des pages actives */
-.header__nav__active {
-  color: grey;
 }
 
 /* padding main des pages : accueil, section_news, carte */
@@ -397,7 +314,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-be;
   padding-top: 300px;
 }
 
@@ -449,6 +366,87 @@ footer {
 
 .nous-contacter__main__contenu label, .nous-contacter__main__contenu input, .nous-contacter__main__contenu p, .nous-contacter__main__contenu button {
   margin-left: 100px;
+}
+
+@media only screen and (min-width: 1601px) {
+  .nous-trouver__localisation {
+    margin-top: 400px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .nous-trouver__localisation__banniere, .nous-trouver__localisation__picture {
+    width: 60%;
+  }
+
+  .menu__main__contenu__picture {
+    flex-direction: column;
+  }
+
+  .menu__main__contenu__picture__magnet {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* responsive navigation bar */
+/* responsive background */
+/* background index */
+@media only screen and (max-width: 980px) {
+  .index {
+    background-image: url("pictures/campagne800px.jpg");
+  }
+
+  .news {
+    background-image: url("pictures/background_wheat_field800px.jpg");
+  }
+
+  .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
+    background-image: url("pictures/restaurant800px.jpg");
+  }
+}
+@media only screen and (min-width: 981px) and (max-width: 1024px) {
+  .index {
+    background-image: url("pictures/campagne1024px.jpg");
+  }
+
+  .news {
+    background-image: url("pictures/background_wheat_field1024px.jpg");
+  }
+
+  .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
+    background-image: url("pictures/restaurant1024px.jpg");
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  .index {
+    background-image: url("pictures/campagne1600px.jpg");
+  }
+
+  .news {
+    background-image: url("pictures/background_wheat_field1600px.jpg");
+  }
+
+  .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
+    background-image: url("pictures/restaurant1600px.jpg");
+  }
+}
+@media only screen and (min-width: 1601px) {
+  .index {
+    background-image: url("pictures/campagne3200px.jpg");
+  }
+
+  .news {
+    background-image: url("pictures/background_wheat_field3200px.jpg");
+  }
+
+  .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
+    background-image: url("pictures/restaurant1900px.jpg");
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
