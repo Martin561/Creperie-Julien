@@ -1,10 +1,17 @@
-/******2eme commit******/
+/******branche menu hamburger******/
+	/*******1er commit*******/
 Site statique d'une creperie :
  	-Utilisation de Flexbox
 	-Integration du scss via SASS
  	-Image du fond responsive
 
-Modification : premiere reorganisation des composants sass
+Modifications :
+	-Simplification du header avec modification du HTML/CSS
+	-Refonte du HTML pour un header hamburger responive mobile
+	-Ajout de la meta bloquant le zoom sur mobile
 
-Bug a corriger :
-	-Bandeau  blanc sur la top et le footer
+A effectuer:
+	-Modification du break-point mobile a 1080px
+	-Ajout du chargement du jQuery dans le HTML
+	-Ajout du CSS responsive
+	-Ajout du code JAVASCRIPT

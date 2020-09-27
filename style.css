@@ -51,6 +51,7 @@
 /* margin_body_set_to_0 */
 html, body {
   margin: 0;
+  padding: 0;
   height: 100%;
 }
 
@@ -90,38 +91,26 @@ body {
 }
 
 /* style header */
-header {
+.header {
   position: fixed;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
   background-color: #f2d891;
-  height: 200px;
+  height: 100px;
   top: 0;
   left: 0;
   right: 0;
-  padding-bottom: 0;
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0;
 }
 
 /* menu header */
 .header a {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 0;
+  margin: 15px;
+  padding: 5px 10px;
 }
 
 .header__nav {
-  display: flex;
-  flex-direction: row;
-  white-space: nowrap;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
+  float: left;
+  margin-top: 30px;
 }
 
 /* footer */
@@ -175,11 +164,6 @@ footer {
 @media only screen and (min-width: 1601px) {
   .nous-trouver__localisation {
     margin-top: 400px;
-  }
-}
-@media only screen and (max-width: 1600px) {
-  header {
-    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -252,28 +236,22 @@ footer {
     background-image: url("pictures/restaurant1900px.jpg");
   }
 }
-/* logo + titre + horaire */
-/* fusion logo + titre */
-.header__logo {
-  display: flex;
-  flex-direction: row;
-  white-space: nowrap;
-  margin-top: 5px;
+.header__logo, .header__title {
+  float: left;
 }
 
 /* logo_vivi_mini */
-.header__logo__picture {
+.header__logo {
   height: 68px;
   width: 80px;
-  top: 5px;
+  margin: 10px 10px;
 }
 
 /* titre */
-.header__logo__title {
-  white-space: nowrap;
+.header__title {
   top: 0;
-  left: 40%;
-  margin-left: 2px;
+  margin: 20px 10px;
+  font-size: 18px;
 }
 
 /* Boutons menu */

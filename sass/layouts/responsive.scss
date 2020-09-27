@@ -20,9 +20,9 @@ $large-down: "only screen and (max-width: #{$large-one})";
     }
 }
 @media #{$large-down} {
-    header {
-            flex-wrap: wrap;
-    }
+    // header {
+    //         flex-wrap: wrap;
+    // }
 }
 @media #{$desktop-down} {
     .nous-trouver__localisation__banniere,.nous-trouver__localisation__picture {
