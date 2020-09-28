@@ -1,7 +1,7 @@
 /* responsive background */
     /* background index */
     // mobile
-@media only screen and (max-width: #{$mobile-one}) {
+@media only screen and (max-width: #{$mobile}) {
     .index {
             background-image: url("pictures/campagne800px.jpg");
     }
@@ -13,7 +13,7 @@
     }
 }
         // desktop-small
-@media only screen and (min-width: #{$mobile-two}) and (max-width: #{$desktop-one}) {
+@media only screen and (min-width: #{$mobile}) and (max-width: #{$desktop}) {
     .index {
             background-image: url("pictures/campagne1024px.jpg");
     }
@@ -25,7 +25,7 @@
     }
 }
         // desktop-big
-@media only screen and (min-width: #{$desktop-two}) and (max-width: #{$large-one}) {
+@media only screen and (min-width: #{$desktop}) and (max-width: #{$large}) {
     .index {
             background-image: url("pictures/campagne1600px.jpg");
     }
@@ -37,7 +37,7 @@
     }
 }
         // TV
-@media only screen and (min-width: #{$large-two}) {
+@media only screen and (min-width: #{$large}) {
     .index {
             background-image: url("pictures/campagne3200px.jpg");
     }
@@ -48,51 +48,3 @@
         background-image: url("pictures/restaurant1900px.jpg");
     }
 }
-
-// @media #{$mobile-down} {
-//     .index {
-//             background-image: url("pictures/campagne800px.jpg");
-//     }
-//     .news {
-//         background-image: url("pictures/background_wheat_field800px.jpg");
-//     }
-//     .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
-//         background-image: url("pictures/restaurant800px.jpg");
-//     }
-// }
-//         // desktop-small
-// @media #{$mobile-up}, #{$desktop-down} {
-//     .index {
-//             background-image: url("pictures/campagne1024px.jpg");
-//     }
-//     .news {
-//         background-image: url("pictures/background_wheat_field1024px.jpg");
-//     }
-//     .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
-//         background-image: url("pictures/restaurant1024px.jpg");
-//     }
-// }
-//         // desktop-big
-//         @media #{$desktop-up}, #{$large-down} {
-//     .index {
-//             background-image: url("pictures/campagne1600px.jpg");
-//     }
-//     .news {
-//         background-image: url("pictures/background_wheat_field1600px.jpg");
-//     }
-//     .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
-//         background-image: url("pictures/restaurant1600px.jpg");
-//     }
-// }
-//         // TV
-// @media #{$large-up} {
-//     .index {
-//             background-image: url("pictures/campagne3200px.jpg");
-//     }
-//     .news {
-//         background-image: url("pictures/background_wheat_field3200px.jpg");
-//     }
-//     .menu, .formule, .crepe__main, .galette__main, .nous-contacter, .nous-trouver {
-//         background-image: url("pictures/restaurant1900px.jpg");
-//     }
-// }
