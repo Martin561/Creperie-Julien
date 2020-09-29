@@ -1,7 +1,9 @@
+$very-small-mobile: 365px!default;
 $mobile: 980px!default;
 $desktop: 1085px!default;
 $large: 1600px!default;
 
+$very-small-mobile-down: "only screen and (max-width: #{$very-small-mobile})";
 
 $mobile-up: "only screen and (min-width: #{$mobile})";
 $mobile-down: "only screen and (max-width: #{$mobile})";
@@ -12,10 +14,13 @@ $desktop-down: "only screen and (max-width: #{$desktop})";
 $large-up: "only screen and (min-width: #{$large})";
 $large-down: "only screen and (max-width: #{$large})";
 
+// Disparition du titre sur mobile en dessous de 345px
+@media #{$very-small-mobile-down} {
+    .header__title { display: none; }
+}
+
 @media #{$large-up} {
-    .nous-trouver__localisation {
-        margin-top: 400px;
-    }
+    .nous-trouver__localisation { margin-top: 400px; }
 }
 
 @media #{$desktop-down} {
@@ -66,7 +71,8 @@ $menu-width:250px!default;
         display: block;
         float: left;
         width: 50px;
-        height: 70px;
+        height: 66px;
+        z-index: 1;
         // background-color: rgba(#FFF, 0.5); //filtre blanc opaque pour centrer icone et logo
 
         cursor: pointer;    //affiche main lors du survol de la souris
@@ -80,29 +86,32 @@ $menu-width:250px!default;
             height: 0;
             top: 12px;
             left: 15px;
-            @include box-shadow(0 10px 0 1px rgb(0, 0, 0), 0 20px 0 1px rgb(0, 0, 0), 0 30px 0 1px rgb(0, 0, 0));
+            @include box-shadow(0 10px 0 1px rgb(0, 0, 0), 0 16px 0 1px rgb(0, 0, 0), 0 22px 0 1px rgb(0, 0, 0));
         }
     }
 
     .header__nav{
         position: absolute;
+        // z-index: 3;
         left: 0;
         top: 0;
         bottom: 0;
+        margin: 0;
+        padding: 0;
         background-color: darken($primary, 5);
 
         width: $menu-width;
         // Transformation qui masque vers la gauche le menu
         transform: translateX($menu-width * -1);
-        // transition-duration: 0.3s;
+        transition-duration: 0.3s;
         a {
             display: block;
             height: 40px;
             
             text-align: center;
-            line-height: 40px;
+            line-height: 30px;
 
-            border-bottom: 1px solid $primary;
+            border-bottom: 1px solid lighten($primary, 5);
         }
     }
 

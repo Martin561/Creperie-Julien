@@ -8,10 +8,7 @@ html, body {
     padding: 0;
     height: 100%;
 }
-body {
-    display: flex;
-    flex-direction: column;
-}
+
 /* contenu page d'accueil, section news, carte, page localisation, page contact  OK*/
 .index__main, .news__section, .menu__main, .nous-trouver__localisation, .nous-contacter__main, .formule, .crepe__main, .galette__main {
     display: flex;
