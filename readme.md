@@ -1,5 +1,5 @@
 /******branche menu hamburger******/
-	/*******4eme commit*******/
+	/*******5eme commit*******/
 Site statique d'une creperie :
  	-Utilisation de Flexbox
 	-Integration du scss via SASS
@@ -18,6 +18,7 @@ Modifications :
 	-Ajout du CSS responsive
 	-Ajout de la signature au pied de page renvoyant au lien github
 	-Creation du menu Hamruger et de ses effects sur toutes les pages du site
+	-Correction du bug qui fesait disparaitre le header format mobile sous le contenu 
 
 A effectuer :
 	-Bug a corriger: 

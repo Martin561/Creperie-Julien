@@ -62,17 +62,18 @@ $menu-width:250px!default;
     }
     // Libere le menu qui etait en position fixed hors mobile = apparition du menu a gauche
     .header{
-        position: static;
+        // position: static;
+        z-index: 1;
     }
     .header__logo { margin: 0; }
 
     .header__icon {
         position: relative;
+        z-index: 1;
         display: block;
         float: left;
         width: 50px;
         height: 66px;
-        z-index: 1;
         // background-color: rgba(#FFF, 0.5); //filtre blanc opaque pour centrer icone et logo
 
         cursor: pointer;    //affiche main lors du survol de la souris
@@ -92,7 +93,7 @@ $menu-width:250px!default;
 
     .header__nav{
         position: absolute;
-        // z-index: 3;
+        height: 100vh;
         left: 0;
         top: 0;
         bottom: 0;

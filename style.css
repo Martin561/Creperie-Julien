@@ -207,7 +207,7 @@ footer {
   }
 
   .header {
-    position: static;
+    z-index: 1;
   }
 
   .header__logo {
@@ -216,11 +216,11 @@ footer {
 
   .header__icon {
     position: relative;
+    z-index: 1;
     display: block;
     float: left;
     width: 50px;
     height: 66px;
-    z-index: 1;
     cursor: pointer;
   }
   .header__icon:after {
@@ -238,6 +238,7 @@ footer {
 
   .header__nav {
     position: absolute;
+    height: 100vh;
     left: 0;
     top: 0;
     bottom: 0;
