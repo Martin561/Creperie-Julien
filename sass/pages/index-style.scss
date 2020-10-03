@@ -1,7 +1,7 @@
 /* padding main des pages : accueil, section_news, carte */
 .index__main, .news__section, .menu__main, .galette__main, .crepe__main, .nous-trouver__localisation {
     margin-top: 170px;
-    margin-bottom: auto;
+    margin-bottom: 10px;
     padding-bottom: 3px;
 }
 .nous-contacter__main {
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1000px;
+    height: 800px;
     padding-top: 3px;
     padding-bottom: 15px;
     padding-left: 3px;

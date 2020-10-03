@@ -55,16 +55,9 @@ html, body {
   height: 100%;
 }
 
-/* contenu page d'accueil, section news, carte, page localisation, page contact  OK*/
-.index__main, .news__section, .menu__main, .nous-trouver__localisation, .nous-contacter__main, .formule, .crepe__main, .galette__main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* padding main des pages : accueil, section_news, carte OK */
 .index__main, .news__section, .menu__main, .galette__main, .crepe__main, .nous-trouver__localisation {
-  margin: auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -110,10 +103,11 @@ html, body {
 /* footer */
 /* alignement footer sur main au bas de la page  */
 footer {
-  margin-top: auto;
   padding-top: 10px;
-  display: flex;
-  flex-direction: column;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
   width: 100%;
 }
 
@@ -138,12 +132,17 @@ footer {
 
 /* filigram */
 .footer__filigram {
-  margin: 0;
+  position: relative;
   color: white;
   background: black;
   font-size: 12px;
   text-align: center;
   width: 100%;
+}
+.footer__filigram p {
+  height: 20px;
+  padding: 4px;
+  margin: 0;
 }
 
 /* signature */
@@ -372,7 +371,7 @@ footer {
 /* padding main des pages : accueil, section_news, carte */
 .index__main, .news__section, .menu__main, .galette__main, .crepe__main, .nous-trouver__localisation {
   margin-top: 170px;
-  margin-bottom: auto;
+  margin-bottom: 10px;
   padding-bottom: 3px;
 }
 
@@ -401,7 +400,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1000px;
+  height: 800px;
   padding-top: 3px;
   padding-bottom: 15px;
   padding-left: 3px;
@@ -417,16 +416,11 @@ footer {
 
 /* postionnement titre et l'ensemble choix menu OK */
 .menu__main__contenu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  height: 100%;
+  top: 0;
   width: 900px;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 5%;
-  height: auto;
+  padding: 5px 3px;
   text-align: center;
-  color: ivory;
 }
 
 /* positionnement des 3 magnets des choix du menu OK */
@@ -438,11 +432,10 @@ footer {
 
 /* magnets des choix du menu OK */
 .menu__main__contenu__picture__magnet {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   background: ivory;
   border: 10px solid ivory;
+  border-radius: 3px;
   margin: 10px;
   height: 234px;
 }

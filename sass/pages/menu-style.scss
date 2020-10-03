@@ -1,15 +1,10 @@
 /* postionnement titre et l'ensemble choix menu OK */
 .menu__main__contenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    height: 100%;
+    top: 0;
     width: 900px;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 5%;
-    height: auto;
+    padding: 5px 3px;
     text-align: center;
-    color: ivory;
 }
 /* positionnement des 3 magnets des choix du menu OK */
 .menu__main__contenu__picture {
@@ -19,11 +14,10 @@
 }
                 /* magnets des choix du menu OK */
 .menu__main__contenu__picture__magnet {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     background: ivory;
     border: 10px solid ivory;
+    border-radius: 3px;
     margin: 10px;
     height: 234px;
 }
