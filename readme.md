@@ -1,5 +1,5 @@
 /******branche menu hamburger******/
-	/*******3eme commit*******/
+	/*******4eme commit*******/
 Site statique d'une creperie :
  	-Utilisation de Flexbox
 	-Integration du scss via SASS
@@ -17,9 +17,11 @@ Modifications :
 	-Ajout du chargement du jQuery dans le HTML
 	-Ajout du CSS responsive
 	-Ajout de la signature au pied de page renvoyant au lien github
-	-Creation du menu Hamruger et de ses effects sur la page d'index
+	-Creation du menu Hamruger et de ses effects sur toutes les pages du site
 
 A effectuer :
-	-Application du menu sur toutes les pages du site
+	-Bug a corriger: 
+		*pied de page collant qui remonte sur certaines pages
+		*marges blanches qui resortent sur le header pour les pages choix crepes et galettes
 	-Miniatures des plats a adapter au format mobile
 	-Paragraphes a adapter au format mobile
